@@ -14,6 +14,9 @@ export const ContainerFooter = styled.div`
   height: 150px;
   width: 80%;
   margin-left: 150px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 `;
 
 export const ImgContainer = styled.div`
