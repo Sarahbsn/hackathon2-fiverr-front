@@ -7,6 +7,8 @@ import Home from './components/Home';
 import FiverrAddEvents from './components/FiverrAddEvents/FiverrAddEvents';
 import FiverrProfile from './components/FiverrProfile/FiverrProfile';
 import FiverrPersonalSpace from './components/FiverrPersonalSpace/FiverrPersonalSpace';
+import Connection from './components/Connection';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path='/login' component={Connection} />
+          <Route path='/register' component={Register}/>
           <Route exact path="/fiverr" component={Homepage} />
           <Route exact path="/Events" component={FiverrAddEvents} />
           <Route exact path="/Friends" component={FiverrProfile} />

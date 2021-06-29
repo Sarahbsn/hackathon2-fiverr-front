@@ -14,30 +14,29 @@ export const ButtonContainer = styled.div`
 `;
 
 const Connection = () => {
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
 
   const [registerMessage, setRegisterMessage] = useState('');
   const [connMessage, setConnMessage] = useState('');
 
-  const login = () => {
+  const register = () => {
     axios.post('http://localhost:8000', {
-      email: loginEmail,
-      password: loginPassword,
-    }, { withCredentials: true }).then((res) => setConnMessage(res));
-
+      email: registerEmail,
+      password: registerPassword,
+    }, { withCredentials: true }).then((res) => setRegisterMessage(res));
   }
 
   return (
     <FormContainer>
-      <h3>Login</h3>
+      <h3>Register</h3>
       <form>
         <p>Email</p>
-        <input type="text" onChange={(event) => setLoginEmail(event.target.value)}/>
+        <input type="text" onChange={(event) => setRegisterEmail(event.target.value)}/>
         <p>Password</p>
-        <input type="text" onChange={(event) => setLoginPassword(event.target.value)}/>
-        <ButtonContainer onClick={() => login()}>
-          <StyledButton>Sign me in!</StyledButton>
+        <input type="text" onChange={(event) => setRegisterPassword(event.target.value)}/>
+        <ButtonContainer onClick={() => register()}>
+          <StyledButton>Sign me up!</StyledButton>
         </ButtonContainer>
       </form>
     </FormContainer>
