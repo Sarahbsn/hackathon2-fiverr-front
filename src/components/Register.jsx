@@ -20,10 +20,11 @@ const Connection = () => {
   const [registerMessage, setRegisterMessage] = useState('');
   const [connMessage, setConnMessage] = useState('');
 
+
   const register = () => {
-    axios.post('http://localhost:8000', {
-      email: registerEmail,
-      password: registerPassword,
+    axios.post('http://localhost:8000/api/users/register', {
+        username: registerEmail,
+        password: registerPassword,
     }, { withCredentials: true }).then((res) => setRegisterMessage(res));
   }
 
@@ -35,7 +36,10 @@ const Connection = () => {
         <input type="text" onChange={(event) => setRegisterEmail(event.target.value)}/>
         <p>Password</p>
         <input type="text" onChange={(event) => setRegisterPassword(event.target.value)}/>
-        <ButtonContainer onClick={() => register()}>
+        <ButtonContainer onClick={(event) => {
+          event.preventDefault();
+          register();
+        }}>
           <StyledButton>Sign me up!</StyledButton>
         </ButtonContainer>
       </form>

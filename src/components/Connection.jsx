@@ -20,13 +20,26 @@ const Connection = () => {
   const [registerMessage, setRegisterMessage] = useState('');
   const [connMessage, setConnMessage] = useState('');
 
+  const [data, setData] = useState(null);
+
   const login = () => {
-    axios.post('http://localhost:8000', {
-      email: loginEmail,
+    axios.post('http://localhost:8000/api/users/login', {
+      username: loginEmail,
       password: loginPassword,
     }, { withCredentials: true }).then((res) => setConnMessage(res));
 
   }
+
+  const getUser = () => {
+    axios({
+      method: "GET",
+      withCredentials: true,
+      url: "http://localhost:4000/user",
+    }).then((res) => {
+      setData(res.data);
+      console.log(res.data);
+    });
+  };
 
   return (
     <FormContainer>
@@ -36,7 +49,10 @@ const Connection = () => {
         <input type="text" onChange={(event) => setLoginEmail(event.target.value)}/>
         <p>Password</p>
         <input type="text" onChange={(event) => setLoginPassword(event.target.value)}/>
-        <ButtonContainer onClick={() => login()}>
+        <ButtonContainer onClick={(event) => {
+          event.preventDefault();
+          login();
+        }}>
           <StyledButton>Sign me in!</StyledButton>
         </ButtonContainer>
       </form>
