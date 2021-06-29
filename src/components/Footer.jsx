@@ -14,7 +14,6 @@ export const ContainerFooter = styled.div`
   height: auto;
   width: 80%;
   margin-left: 150px;
-  bottom: 1;
 `;
 
 export const ImgContainer = styled.div`
@@ -47,7 +46,7 @@ export default function Footer() {
     <>
       <ContainerFooter>
         <LogoAndText>
-          <StyledLogo src={fiverr} alt="" />z
+          <StyledLogo src={fiverr} alt="" />
           <p>Fiverr International Ltd. 2020</p>
         </LogoAndText>
         <ImgContainer>
