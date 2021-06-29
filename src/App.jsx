@@ -7,6 +7,9 @@ import Home from './components/Home';
 import FiverrAddEvents from './components/FiverrAddEvents/FiverrAddEvents';
 import FiverrProfile from './components/FiverrProfile/FiverrProfile';
 import Connection from './components/Connection';
+import FiverrPersonalSpace from './components/FiverrPersonalSpace/FiverrPersonalSpace';
+import { CreateMyEvent } from './components/FiverrCreateMyEvents/CreateMyEvent';
+
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
           <Route exact path="/Connection" component={Connection} />
           <Route exact path="/Events" component={FiverrAddEvents} />
           <Route exact path="/Friends" component={FiverrProfile} />
+          <Route exact path="/Resources" component={FiverrPersonalSpace} />
+          <Route exact path="/Blog" component={CreateMyEvent} />
         </Switch>
         <Footer />
       </Router>

@@ -30,9 +30,9 @@ export const StyledH3 = styled.h3`
 
 export const StyledP = styled.p`
   display: flex;
-  height: 30px;
+  height: 25px;
   width: 350px;
-  padding: 5px;
+  padding: 8px;
   margin: 120px;
   background-color: #c0c0c0;
   justify-content: center;
