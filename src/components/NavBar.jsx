@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/NavBar.css'
+import '../styles/NavBar.css';
 
 export default function NavBar() {
   const navbarLinks = [
@@ -28,7 +28,7 @@ export default function NavBar() {
       id: 5,
       link: '/resources',
       title: 'Resources',
-    }
+    },
   ];
 
   return (
