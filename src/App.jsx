@@ -2,11 +2,15 @@ import './App.css';
 import Homepage from './components/homepage/homePage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Connection from './components/Connection';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import MapPage from './components/MapPage/MapPage';
 import FiverrAddEvents from './components/FiverrAddEvents/FiverrAddEvents';
 import FiverrProfile from './components/FiverrProfile/FiverrProfile';
+import FiverrPersonalSpace from './components/FiverrPersonalSpace/FiverrPersonalSpace';
+import { CreateMyEvent } from './components/FiverrCreateMyEvents/CreateMyEvent';
+
 
 function App() {
   return (
@@ -18,8 +22,11 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/fiverr" component={Homepage} />
           <Route exact path="/Events" component={FiverrAddEvents} />
+          <Route exact path="/Connection" component={Connection} />
           <Route exact path="/Friends" component={FiverrProfile} />
           <Route exact path='/mappage' component={MapPage} />
+          <Route exact path="/Resources" component={FiverrPersonalSpace} />
+          <Route exact path="/Blog" component={CreateMyEvent} />
         </Switch>
         <Footer />
       </Router>

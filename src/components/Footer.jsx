@@ -46,7 +46,7 @@ export default function Footer() {
     <>
       <ContainerFooter>
         <LogoAndText>
-          <StyledLogo src={fiverr} alt="" />z
+          <StyledLogo src={fiverr} alt="" />
           <p>Fiverr International Ltd. 2020</p>
         </LogoAndText>
         <ImgContainer>

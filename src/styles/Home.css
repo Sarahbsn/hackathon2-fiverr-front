@@ -1,0 +1,30 @@
+.maincontainer-home {
+  height: 100vh;
+}
+
+.home-picture {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/woman.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+.fiverrmeet-description {
+  text-align: center;
+  width: 50%;
+  margin-left: 3rem;
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+
+
