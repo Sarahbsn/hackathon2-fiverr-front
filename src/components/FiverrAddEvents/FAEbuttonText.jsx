@@ -4,7 +4,7 @@ import { StyledButton } from '../../styles/StyledButtons';
 export const ContainerText = styled.div`
   display: flex;
   justify-content: center;
-  border: solid 1px black;
+  border: solid 3px #2dbe73;
   background-color: #c0c0c0;
   width: 65%;
   height: auto;
