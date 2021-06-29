@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import gilbert from '../../assets/gilbert';
-import { StyledButton } from '../../styles/StyledButtons';
 
 export const ContainerProfilePersonal = styled.div`
   width: auto;
@@ -44,6 +43,23 @@ export const TitleName = styled.h2``;
 
 export const Proverb = styled.p``;
 
+export const ButtonConvers = styled.button`
+  color: #ffffff;
+  background-color: #039053;
+  width: 35%;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 16px;
+  border: solid 1px;
+  cursor: pointer;
+  &:hover {
+    background-color: #005f1e;
+    color: white;
+    transition: 0.4s;
+  }
+`;
+
 export const GreyLine = styled.div`
   display: flex;
   justify-content: center;
@@ -78,7 +94,7 @@ export default function ProfilPhoto() {
             <TitleName>Gilbert Jenkins</TitleName>
             <Proverb>A proud mind and a beggar's purse, agree ill together.</Proverb>
             <GreyLine>
-              <StyledButton>Conversation</StyledButton>
+              <ButtonConvers>Conversation</ButtonConvers>
             </GreyLine>
           </ContainerTitlePhoto>
         </Container>
