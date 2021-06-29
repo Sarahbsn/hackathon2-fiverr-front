@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 import { FAEpicture } from './FAEpicture';
-import { FaepmapText } from './FAEmapText';
+
 import { FaebuttonText } from './FAEbuttonText';
 
 export const ContainerAddEvents = styled.div`
-  height: 1300px;
-  width: 100%;
+  height: 110vh;
 `;
 
 export default function FiverrAddEvents() {
   return (
     <>
       <ContainerAddEvents>
+      <FaebuttonText />
         <FAEpicture />
-        <FaepmapText />
-        <FaebuttonText />
+       
+        
       </ContainerAddEvents>
     </>
   );
