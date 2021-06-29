@@ -4,17 +4,19 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import FiverrAddEvents from './components/FiverrAddEvents/FiverrAddEvents';
+import FiverrProfile from './components/FiverrProfile/FiverrProfile';
 
 function App() {
   return (
     <div className="App">
-      <Router >
-      <Header />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/Friends' component={FiverrAddEvents} />
-      </Switch>
-      <Footer />
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Events" component={FiverrAddEvents} />
+          <Route exact path="/Friends" component={FiverrProfile} />
+        </Switch>
+        <Footer />
       </Router>
     </div>
   );
