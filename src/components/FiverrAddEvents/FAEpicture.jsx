@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { StyledButton } from '../../styles/StyledButtons';
 import Party from '../../assets/friends.webp';
-import placeicon from '../../assets/placeicon.png'
-import adressicon from '../../assets/adressicon.png'
+import placeicon from '../../assets/placeicon.png';
+import adressicon from '../../assets/adressicon.png';
 
 export const Container = styled.div`
   display: flex;
@@ -22,20 +22,31 @@ export const StyledImg = styled.img`
 `;
 
 export const PlaceIcon = styled.img`
-height: 70px;
-padding-top: 5rem;
-` 
+  height: 75px;
+  width: 85px;
+  padding-top: 5rem;
+`;
 
-export const IconsContainer = styled.div` 
-display: flex;
-justify-content: space-between;
-`
+export const IconsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 export const ColumnContainer = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+`;
 
-` 
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 73%;
+`;
+export const SpaceWhite = styled.div`
+  width: 20px;
+`;
 
 export const FAEpicture = () => {
   return (
@@ -43,21 +54,23 @@ export const FAEpicture = () => {
       <Container>
         <BoxFaePicFlex>
           <StyledImg src={Party} alt="" />
-
           <IconsContainer>
             <ColumnContainer>
-          <PlaceIcon src={placeicon} />
-          <p>Strasbourg</p>
-          </ColumnContainer>
-          <ColumnContainer>
-          <PlaceIcon src={adressicon} />
-          <p>10 patchigue street</p>
-          </ColumnContainer>
+              <PlaceIcon src={placeicon} />
+              <p>Strasbourg</p>
+            </ColumnContainer>
+            <ColumnContainer>
+              <PlaceIcon src={adressicon} />
+              <p>10 patchigue street</p>
+            </ColumnContainer>
           </IconsContainer>
-          {/* <StyledButton>Contact the event owner</StyledButton>
-          <StyledButton>Her/His Events</StyledButton> */}
         </BoxFaePicFlex>
       </Container>
+      <ButtonContainer>
+        <StyledButton>Contact the event owner</StyledButton>
+        <SpaceWhite />
+        <StyledButton>Her/His Events</StyledButton>
+      </ButtonContainer>
     </>
   );
 };
