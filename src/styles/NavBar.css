@@ -1,17 +1,17 @@
 ul {
   display: flex;
   justify-content: flex-end;
-   align-items: center;
-   text-decoration: none;
- }
- 
- li {
-     list-style: none;
-     margin-right: 35px;
- }
- 
- .nav-links {
-   /* text-decoration: none;
+  align-items: center;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin-right: 35px;
+}
+
+.nav-links {
+  /* text-decoration: none;
    font-size: 15px;
    letter-spacing: 2px;
    color: black; */

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import marie from '../../assets/marie.jpg';
 import { StyledButton } from '../../styles/StyledButtons';
-import { Container, BoxFaePicFlex, StyledImg } from '../FiverrAddEvents/FAEpicture';
+import { Container, BoxFaePicFlex } from '../FiverrAddEvents/FAEpicture';
 
 export const ContainerProfile = styled.div`
   height: 335px;
