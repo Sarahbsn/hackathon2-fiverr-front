@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { StyledButton } from '../../styles/StyledButtons';
-import Party from '../../assets/friends.webp';
+import friend from '../../assets/friends.webp';
 
 export const Container = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export const BoxFaePicFlex = styled.div`
 `;
 
 export const StyledImg = styled.img`
-  width: 700px;
+  width: 600px;
   height: auto;
 `;
 
@@ -23,7 +23,7 @@ export const FAEpicture = () => {
     <>
       <Container>
         <BoxFaePicFlex>
-          <StyledImg src={Party} alt="" />
+          <StyledImg src={friend} alt="" />
           <StyledButton>Contact the event owner</StyledButton>
         </BoxFaePicFlex>
       </Container>
