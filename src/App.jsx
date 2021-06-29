@@ -1,4 +1,5 @@
 import './App.css';
+import Homepage from './components/homepage/homePage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/fiverr" component={Homepage} />
           <Route exact path="/Events" component={FiverrAddEvents} />
           <Route exact path="/Friends" component={FiverrProfile} />
         </Switch>
