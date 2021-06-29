@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <Router >
       <Header />
-      <Connection />
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/connection' component={Connection} />
       </Switch>
       <Footer />
       </Router>

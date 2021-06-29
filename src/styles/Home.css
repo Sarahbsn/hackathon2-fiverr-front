@@ -1,0 +1,14 @@
+.home-picture {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/woman-orangebg.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  justify-content: center;
+}
+

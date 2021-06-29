@@ -1,6 +1,8 @@
 import React from 'react';
 import { Flex, FlexCol } from '../styles/GenericsContainer';
 import FiverrMeetCard from './FiverrMeetCard';
+import '../styles/Home.css'
+
 
 const Home = () => {
 
@@ -36,6 +38,10 @@ const Home = () => {
 
   return (
     <div>
+        <div className='home-picture'>
+coucou
+        </div>
+
       <Flex>
         {
           fiverrMeets.map((fiverrMeet, index) => {
@@ -51,6 +57,7 @@ const Home = () => {
           })
         }
       </Flex>
+    
     </div>
   );
 };
