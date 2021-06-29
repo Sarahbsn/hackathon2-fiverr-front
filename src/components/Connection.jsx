@@ -1,29 +1,23 @@
 import React from 'react';
 import { StyledButton } from '../styles/StyledButtons';
-import styled from 'styled-components';
-
-export const FormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-export const ButtonContainer = styled.div`
-  display: flex;
-  margin-top: 3rem;
-`;
+import { FormContainer, StyledDivBox, StyledConnection, ButtonContainer, StyledImage } from '../styles/styledConnection';
 
 const Connection = () => {
   return (
     <FormContainer>
-      <form>
-        <p>Email</p>
-        <input type="text" />
-        <p>Password</p>
-        <input type="text" />
-        <ButtonContainer>
-          <StyledButton>Sign me in!</StyledButton>
-        </ButtonContainer>
-      </form>
+      <StyledImage>
+        <StyledDivBox>
+          <StyledConnection>
+            <p>Email</p>
+            <input type="text" />
+            <p>Password</p>
+            <input type="text" />
+            <ButtonContainer>
+              <StyledButton style={{ width: '10rem' }}>Sign me in!</StyledButton>
+            </ButtonContainer>
+          </StyledConnection>
+        </StyledDivBox>
+      </StyledImage>
     </FormContainer>
   );
 };

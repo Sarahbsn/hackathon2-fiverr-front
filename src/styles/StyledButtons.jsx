@@ -3,9 +3,8 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
   color: #ffffff;
   background-color: #039053;
-  width: 250px;
+  width: 15%;
   height: 40px;
-  padding: 8px 16px;
   border-radius: 10px;
   font-weight: 900;
   font-size: 16px;
@@ -17,5 +16,3 @@ export const StyledButton = styled.button`
     transition: 0.4s;
   }
 `;
-
-
