@@ -18,7 +18,7 @@ export default function FiverrProfile() {
     <>
       <ContainerProfile>
         <ProfilePhoto />
-        <ProfileMapText />
+     
         <ProfileButtonText />
       </ContainerProfile>
     </>

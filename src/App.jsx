@@ -19,8 +19,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/fiverr" component={Homepage} />
-          <Route exact path="/Connection" component={Connection} />
           <Route exact path="/Events" component={FiverrAddEvents} />
+          <Route exact path="/Connection" component={Connection} />
           <Route exact path="/Friends" component={FiverrProfile} />
           <Route exact path="/Resources" component={FiverrPersonalSpace} />
           <Route exact path="/Blog" component={CreateMyEvent} />
