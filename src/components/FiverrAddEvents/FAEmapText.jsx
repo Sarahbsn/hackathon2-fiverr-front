@@ -25,6 +25,7 @@ export const StyledH3 = styled.h3`
   width: 150px;
   margin-left: 325px;
   margin: 120px;
+  text-decoration: underline #2dbe73;
 `;
 
 export const StyledP = styled.p`
