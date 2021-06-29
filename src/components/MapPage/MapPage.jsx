@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import { Flex, FlexCol } from '../../styles/GenericsContainer';
 import { SVGMap } from "react-svg-map";
 import France from "@svg-maps/france.regions";
 import "react-svg-map/lib/index.css";
@@ -26,15 +25,14 @@ const MapPage = () => {
         return event.target.attributes.name.value;
     }
 
-    const getLocationId = (event) => {
-        return event.target.id;
-    }
-
     const handleLocationClick = (event) => {
         const clickedLocation = getLocationName(event);
-        /*         const clickedLocationId = getLocationId(event); */
         setClickedLocation(clickedLocation);
-        /*         window.open(this.links[clickedLocationId], '_blank'); */
+    }
+
+    const handleLocationMouseOver = (event) => {
+        const pointedLocation = getLocationName(event);
+        setPointedLocation(pointedLocation)
     }
 
     return (
@@ -44,11 +42,12 @@ const MapPage = () => {
                 <h1>
                     FiverrFriends Map
                 </h1>
-                <h2>Location : {clickedLocation}</h2>
+                <h2>Location : {pointedLocation}</h2>
                 <MapContainer>
                     <SVGMap
                         map={France}
                         onLocationClick={handleLocationClick}
+                        onLocationMouseOver={handleLocationMouseOver}
                     />
                 </MapContainer>
             </FormContainer>
