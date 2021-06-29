@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import FiverrAddEvents from './components/FiverrAddEvents/FiverrAddEvents';
 import FiverrProfile from './components/FiverrProfile/FiverrProfile';
-import Connection from './components/Connection';
 import FiverrPersonalSpace from './components/FiverrPersonalSpace/FiverrPersonalSpace';
 import { CreateMyEvent } from './components/FiverrCreateMyEvents/CreateMyEvent';
 
