@@ -6,9 +6,9 @@ export const ContainerText = styled.div`
   justify-content: center;
   border: solid 3px #2dbe73;
   background-color: #c0c0c0;
-  width: 65%;
+  width: 50%;
   height: auto;
-  margin-left: 300px;
+  margin-left: 445px;
 `;
 
 export const EventDesc = styled.p`
