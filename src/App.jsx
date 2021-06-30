@@ -18,7 +18,7 @@ function App() {
         {/*         <Connection /> */}
         <Header />
         <Switch>
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/fiverr" component={Homepage} />
           <Route exact path="/events/:id" render={(props) => <FiverrAddEvents {...props} />} />
           <Route exact path="/Connection" component={Connection} />
