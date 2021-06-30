@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import  { CMEtextMap }  from './CMEtextMap';
 import { ProfileButtonText } from '../FiverrCreateMyEvents/CMEbuttonDesc';
 import ProfilPhoto from './CMEphoto';
 
@@ -18,7 +17,6 @@ export const CreateMyEvent = () => {
     <>
       <ContainerProfile>
         <ProfilPhoto />
-        <CMEtextMap />
         <ProfileButtonText />
       </ContainerProfile>
     </>
