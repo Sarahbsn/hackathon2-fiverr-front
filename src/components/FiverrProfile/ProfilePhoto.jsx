@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { StyledButton } from '../../styles/StyledButtons';
 import { Container, BoxFaePicFlex } from '../FiverrAddEvents/FAEpicture';
 
@@ -36,7 +37,9 @@ export default function ProfilPhoto(props) {
             <ContainerCol>
               <StyledPhoto src={props.avatar} alt="" />
               <WidhtButton>
-                <StyledButton>Contact Me</StyledButton>
+                <Link to="/conversation">
+                  <StyledButton>Contact Me</StyledButton>
+                </Link>
               </WidhtButton>
             </ContainerCol>
           </BoxFaePicFlex>
