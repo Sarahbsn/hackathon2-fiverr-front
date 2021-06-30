@@ -1,13 +1,16 @@
 import styled from 'styled-components';
-
+import region from '../../assets/region.png';
+import ville from '../../assets/ville.png';
+import name from '../../assets/name.png';
+import skills from '../../assets/skills.png';
 
 export const Container = styled.div`
   display: flex;
-  height: 45%;
-  width: 70%;
-  padding: 65px;
+  height: 10%;
+  width: 65%;
+  padding: 45px;
   justify-content: space-between;
-  margin-left: 200px;
+  margin-left: 370px;
 `;
 
 export const StyledBoxGoogleMap = styled.iframe`
@@ -24,24 +27,35 @@ export const StyledTitleInfo = styled.h3`
   text-decoration: underline #2dbe73;
 `;
 
+export const ImgContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const PimpIcon = styled.img`
+  width: 50px;
+  height: 50px;
+`;
+
 export const ProfileMapText = (props) => {
   return (
     <>
       <Container>
-        <StyledTitleInfo>Firstname: </StyledTitleInfo>
-        <p>{props.firstname}</p>
-        <StyledTitleInfo> Lastname:</StyledTitleInfo>
-        <p>{props.name}</p>
-        <StyledTitleInfo>Skill:</StyledTitleInfo>
-        <p>{props.skill}</p>
-        <StyledTitleInfo>Live in:</StyledTitleInfo>
-        <p>{props.ville} / {props.region}</p>
-
-        <StyledBoxGoogleMap
-          title={props.ville}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41792.62034245705!2d6.1613866973156055!3d49.104903895785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794dc1b6074b6a9%3A0x596be4b635bba669!2sMetz!5e0!3m2!1sfr!2sfr!4v1624972227695!5m2!1sfr!2sfr"
-        />
-
+        <ImgContainer>
+          <PimpIcon src={name} />
+          <p>{props.firstname}</p>
+          <p>{props.lastname}</p>
+        </ImgContainer>
+        <ImgContainer>
+          <PimpIcon src={skills} />
+          <p>{props.skill}</p>
+        </ImgContainer>
+        <ImgContainer>
+          <PimpIcon src={ville} />
+          <p>
+            {props.ville} / {props.region}
+          </p>
+        </ImgContainer>
       </Container>
     </>
   );
