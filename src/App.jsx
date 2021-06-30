@@ -14,16 +14,16 @@ import ChatApp from './ChatApp';
 function App() {
   return (
     <div className="App">
-      <Router >
+      <Router>
         {/*         <Connection /> */}
         <Header />
         <Switch>
+          <Route exact path="/fiverrhome" component={Home} />
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/fiverr" component={Homepage} />
           <Route exact path="/events/:id" render={(props) => <FiverrAddEvents {...props} />} />
           <Route exact path="/Connection" component={Connection} />
           <Route exact path="/showprofile/:id" render={(props) => <FiverrProfile {...props} />} />
-          <Route exact path='/mappage' component={MapPage} />
+          <Route exact path="/mappage" component={MapPage} />
           <Route exact path="/Resources" component={FiverrPersonalSpace} />
           <Route exact path="/Blog" component={CreateMyEvent} />
           <Route exact path="/conversation" component={ChatApp} />

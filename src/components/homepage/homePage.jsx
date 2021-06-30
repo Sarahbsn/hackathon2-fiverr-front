@@ -30,9 +30,11 @@ const Homepage = () => {
           <StyledImage src={Couple} alt="bureaux" />
         </StyledRightContainer>
       </StyledMainContainer>
-      <StyledCardContainer>
-        <StyledCardImage src={Card} alt="card presentation" />
-      </StyledCardContainer>
+      <Link to="/fiverrhome">
+        <StyledCardContainer>
+          <StyledCardImage src={Card} alt="card presentation" />
+        </StyledCardContainer>
+      </Link>
     </div>
   );
 };
