@@ -1,5 +1,5 @@
 .maincontainer-home {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .home-picture {
@@ -8,7 +8,7 @@
   background-image: url('../assets/woman.jpg');
   background-repeat: no-repeat;
   width: 100%;
-  height: 30rem;
+  height: 70rem;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -22,8 +22,13 @@
   color: white;
 }
 
-p {
+.description-p {
   font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1.3rem;
 }
 
 
