@@ -1,4 +1,3 @@
-import './App.css';
 import Homepage from './components/homepage/homePage';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,7 +8,7 @@ import FiverrProfile from './components/FiverrProfile/FiverrProfile';
 import Connection from './components/Connection';
 import FiverrPersonalSpace from './components/FiverrPersonalSpace/FiverrPersonalSpace';
 import { CreateMyEvent } from './components/FiverrCreateMyEvents/CreateMyEvent';
-
+import ChatApp from './ChatApp';
 
 function App() {
   return (
@@ -24,6 +23,7 @@ function App() {
           <Route exact path="/Friends" component={FiverrProfile} />
           <Route exact path="/Resources" component={FiverrPersonalSpace} />
           <Route exact path="/Blog" component={CreateMyEvent} />
+          <Route exact path="/conversation" component={ChatApp} />
         </Switch>
         <Footer />
       </Router>
