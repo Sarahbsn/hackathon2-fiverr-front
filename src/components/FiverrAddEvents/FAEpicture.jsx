@@ -43,7 +43,7 @@ export const ColumnContainer = styled.div`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 73%;
+  padding-top: 5rem;
 `;
 export const SpaceWhite = styled.div`
   width: 20px;

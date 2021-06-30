@@ -1,20 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { SVGMap } from "react-svg-map";
+import placeicon from '../../assets/placeicon.png';
 import France from "@svg-maps/france.regions";
 import "react-svg-map/lib/index.css";
 import styled from 'styled-components';
-
 
 export const FormContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-height: 100vh
+
+/* height: 100vh; */
 `
+
 export const MapContainer = styled.div`
 width: 800px;
-height: 100vh
+height: 100vh;
+`
+
+export const IconLocation = styled.img` 
+height: 75px;
+width: 75px;
 `
 
 const MapPage = () => {
@@ -68,10 +75,16 @@ const MapPage = () => {
         <div>
 
             <FormContainer>
+                <div style={{backgroundColor:'#6eb895', width:'100%', textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center', color:'white'}}>
                 <h1>
                     FiverrFriends Map
                 </h1>
-                <h2>Location : {pointedLocation}</h2>
+                
+                <IconLocation src={placeicon} />
+                <p style={{width:'40%'}}>What if you're about to meet your future collaborator in Bordeaux? Or maybe a new friend?
+                Navigate through the map to find your next move! </p>
+                </div>
+                <h2 style={{padding: '30px'}}>Location : {pointedLocation}</h2>
                 <MapContainer>
                     <SVGMap
                         map={France}

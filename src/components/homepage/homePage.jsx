@@ -12,15 +12,16 @@ import {
   StyledCardContainer,
   StyledCardImage,
 } from '../../styles/styledHomepage';
+import { StyledButton } from '../../styles/StyledButtons';
 
 const Homepage = () => {
   return (
     <div>
       <StyledMainContainer>
         <StyledLeftContainer>
-          <StyledTitle1>Welcome to Fiverr Community</StyledTitle1>
-          <StyledParagraphe>Get access to upcoming events, exclusive content, the latest and greatest industry news, and more</StyledParagraphe>
-          <Styledbutton>Sign in</Styledbutton>
+          <StyledTitle1>Welcome to the Fiverr Community</StyledTitle1>
+          <StyledParagraphe>Get access to upcoming events, exclusive content, the latest and greatest industry news, and more.</StyledParagraphe>
+          <StyledButton style={{width:'20%', fontSize:'25px'}}>Sign in</StyledButton>
         </StyledLeftContainer>
         <StyledRightContainer>
           <StyledImage src={Couple} alt="bureaux" />

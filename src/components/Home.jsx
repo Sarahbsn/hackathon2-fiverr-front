@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flex, FlexCol } from '../styles/GenericsContainer';
 import FiverrMeetCard from './FiverrMeetCard';
+import { StyledButton } from '../styles/StyledButtons';
 import '../styles/Home.css'
 
 
@@ -40,10 +41,13 @@ console.log(fiverrMeets);
     <div className='maincontainer-home'>
         <div className='home-picture'>
           <div className='fiverrmeet-description'>
-<h1>Welcome to Fiverr Friends<span>!</span></h1>
+<h1>Welcome to Fiverr Friends!</h1>
 <h2>Have you ever wanted to meet Fiverr freelancers from your professional field near you?</h2>
-<p>Good news, now you can create "Fiverr meets" that allow you to find new collaborations for your projects, grow your network or simply enjoying a moment with new people. Join the community now!</p>
-<p>Join us, Join the community!</p>
+<p className='description-p'>Good news, now you can create "Fiverr meets" that allow you to find new collaborations for your projects, grow your network or simply enjoying a moment with new people.</p>
+<p className='description-p'>Join us, join the community!</p>
+<div>
+<StyledButton style={{backgroundColor:'white', color:'#1dbf73', fontSize:'23px', height:'50px'}}>Start the experience now!</StyledButton>
+</div>
         </div>
         </div>
       <Flex>
