@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { StyledButton } from '../../styles/StyledButtons';
 import { ContainerText, EventDesc, ContainerButton } from '../FiverrAddEvents/FAEbuttonText';
-import place from '../../assets/place.png'
-import hours from '../../assets/hours.png'
-import date from '../../assets/date.png'
+import place from '../../assets/place.png';
+import hours from '../../assets/hours.png';
+import date from '../../assets/date.png';
 
 export const EventDescText = styled.p`
   display: flex;
@@ -19,23 +19,23 @@ export const EventDescText = styled.p`
 `;
 
 export const ContainerAlign = styled.div`
-display: flex;
-height: 280px;
-align-items: center;
-justify-content: space-between;
-margin-left: 25%;
-width: 50%;
+  display: flex;
+  height: 280px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25%;
+  width: 50%;
 `;
 
 export const ImgContainer = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const PimpIcon = styled.img`
-width: 50px;
-height: 50px;
+  width: 50px;
+  height: 50px;
 `;
 
 export const ProfileButtonText = () => {
@@ -48,21 +48,21 @@ export const ProfileButtonText = () => {
         </EventDescText>
       </ContainerText>
       <ContainerAlign>
-      <ImgContainer>
-      <PimpIcon src={place}/>
-      <p>Paris</p>
-      </ImgContainer>
-      <ImgContainer>
-      <PimpIcon src={date}/>
-      <p>2021-06-29</p>
-      </ImgContainer>
-      <ImgContainer>
-      <PimpIcon src={hours}/>
-      <p>8:30 PM</p>
-      </ImgContainer>
+        <ImgContainer>
+          <PimpIcon src={place} />
+          <p>Paris</p>
+        </ImgContainer>
+        <ImgContainer>
+          <PimpIcon src={date} />
+          <p>2021-06-29</p>
+        </ImgContainer>
+        <ImgContainer>
+          <PimpIcon src={hours} />
+          <p>8:30 PM</p>
+        </ImgContainer>
       </ContainerAlign>
       <ContainerButton>
-        <StyledButton>Create an event</StyledButton>
+        <StyledButton>Create a Fiverr Meet</StyledButton>
       </ContainerButton>
     </>
   );

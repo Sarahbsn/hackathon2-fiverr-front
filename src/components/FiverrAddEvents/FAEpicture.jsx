@@ -68,9 +68,11 @@ export const FAEpicture = (props) => {
         </BoxFaePicFlex>
       </Container>
       <ButtonContainer>
-        <Link to={`/showprofile/${props.author_id}`}><StyledButton>Contact the event owner</StyledButton></Link>
+        <Link to={`/showprofile/${props.author_id}`}>
+          <StyledButton>Contact the Fiverr Meet owner</StyledButton>
+        </Link>
         <SpaceWhite />
-        <StyledButton>Her/His Events</StyledButton>
+        <StyledButton>Her/His Fiverr Meets</StyledButton>
       </ButtonContainer>
     </>
   );

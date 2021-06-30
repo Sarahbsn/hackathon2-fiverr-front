@@ -17,9 +17,9 @@ export const PersonalRecentEvts = () => {
   return (
     <>
       <ContainerPersonalRecentEvts>
-        <TitleCreateEvent>My events</TitleCreateEvent>
+        <TitleCreateEvent>My Fiverr Meets</TitleCreateEvent>
         <EventCard />
-        <TitleCreateEvent>Following events</TitleCreateEvent>
+        <TitleCreateEvent>Following Fiverr Meets</TitleCreateEvent>
         <EventCard />
       </ContainerPersonalRecentEvts>
     </>

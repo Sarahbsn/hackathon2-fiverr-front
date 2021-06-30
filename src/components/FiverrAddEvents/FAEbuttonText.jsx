@@ -16,7 +16,6 @@ export const ContainerText = styled.div`
 
 export const EventDesc = styled.p`
   display: flex;
-  width: 40%;
   line-height: 1.5rem;
   text-align: center;
 `;

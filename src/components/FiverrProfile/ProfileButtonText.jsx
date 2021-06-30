@@ -15,7 +15,7 @@ export const ProfileButtonText = (props) => {
           <EventDesc>{props.desc}</EventDesc>
         </ContainerText>
         <ContainerButton>
-          <StyledButton>Her/His Event</StyledButton>
+          <StyledButton>Her/His Fiverr Meets</StyledButton>
         </ContainerButton>
       </ContainerCol>
     </>
