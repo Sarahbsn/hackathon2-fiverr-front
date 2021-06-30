@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { SVGMap } from "react-svg-map";
 import France from "@svg-maps/france.regions";
 import "react-svg-map/lib/index.css";
@@ -83,9 +84,8 @@ const MapPage = () => {
             <h4>Freelancers Around You</h4>{
                 (freelancers && freelancers.length) ? (
                     <div>
-
                         {
-                            freelancers.map((freelancer) => <div> {freelancer.name}</div>)
+                            freelancers.map((freelancer) => <Link to={`/showprofile/${freelancer.iduser}`}><div> {freelancer.name}</div></Link>)
                         }
                     </div>
                 ) : (<div> No results </div>)
@@ -95,9 +95,8 @@ const MapPage = () => {
             <h4>FiverrMeets Around You</h4>{
                 (fiverrMeets && fiverrMeets.length) ? (
                     <div>
-
                         {
-                            fiverrMeets.map((fiverrmeet) => <div> {fiverrmeet.name}</div>)
+                            fiverrMeets.map((fiverrmeet) => <Link to={`/showprofile/${fiverrmeet.iduser}`}><div> {fiverrmeet.name}</div></Link>)
                         }
                     </div>
                 ) : (<div> No results </div>)
