@@ -11,7 +11,7 @@ export default function NavBar() {
     },
     {
       id: 2,
-      link: '/events',
+      link: '/events/1',
       title: 'Events',
     },
     {
@@ -27,7 +27,7 @@ export default function NavBar() {
     {
       id: 5,
       link: '/resources',
-      title: 'Resources',
+      title: 'My Profil',
     },
   ];
 

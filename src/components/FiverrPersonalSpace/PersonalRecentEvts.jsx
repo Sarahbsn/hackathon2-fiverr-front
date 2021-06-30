@@ -19,7 +19,7 @@ export const PersonalRecentEvts = () => {
       <ContainerPersonalRecentEvts>
         <TitleCreateEvent>My events</TitleCreateEvent>
         <EventCard />
-        <TitleCreateEvent>My events</TitleCreateEvent>
+        <TitleCreateEvent>Following events</TitleCreateEvent>
         <EventCard />
       </ContainerPersonalRecentEvts>
     </>
