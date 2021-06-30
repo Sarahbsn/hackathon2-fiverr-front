@@ -10,7 +10,7 @@ export const StyledLeftContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 30vh;
-  width: 50%;
+  width: 35%;
   margin-top: 5%;
   margin-left: 2%;
 
@@ -19,7 +19,6 @@ export const StyledLeftContainer = styled.div`
 
 export const StyledTitle1 = styled.h1`
   font-size: 5vh;
-  color: #8f2900;
   text-align: center;
 `;
 
@@ -29,12 +28,12 @@ export const StyledParagraphe = styled.p`
   text-align: center;
 `;
 
-export const Styledbutton = styled.button`
-  height: 5vh;
-  width: 20%;
-  background-color: lightcoral;
-  align-items: center;
-`;
+// export const Styledbutton = styled.button`
+//   height: 5vh;
+//   width: 20%;
+//   background-color: lightcoral;
+//   align-items: center;
+// `;
 
 // right conatainer with image
 

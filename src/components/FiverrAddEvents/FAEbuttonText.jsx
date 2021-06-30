@@ -28,22 +28,21 @@ export const ContainerButton = styled.div`
 
 export const FriendsIcon = styled.img` 
 height: 5rem;
-` 
+`
 
-export const FaebuttonText = () => {
+export const FaebuttonText = (props) => {
   return (
     <>
       <ContainerText>
         <h2>
-        Hello and welcome to my Fiverr Meet! 
+          Hello and welcome to my Fiverr Meet!
         </h2>
-        <FriendsIcon src={logofriends} alt="icon"/>
+        <FriendsIcon src={logofriends} alt="icon" />
         <EventDesc>
-          Everyone is welcome to participate in the picnic, please have a good mood and eat and drink! Thank you, you are
-          a magical community!
+          {props.description}
         </EventDesc>
       </ContainerText>
-      
+
     </>
   );
 };

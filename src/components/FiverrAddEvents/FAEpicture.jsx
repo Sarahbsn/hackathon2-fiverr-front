@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { StyledButton } from '../../styles/StyledButtons';
 import Party from '../../assets/friends.webp';
 import placeicon from '../../assets/placeicon.png';
@@ -42,32 +43,32 @@ export const ColumnContainer = styled.div`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 73%;
+  padding-top: 5rem;
 `;
 export const SpaceWhite = styled.div`
   width: 20px;
 `;
 
-export const FAEpicture = () => {
+export const FAEpicture = (props) => {
   return (
     <>
       <Container>
         <BoxFaePicFlex>
-          <StyledImg src={Party} alt="" />
+          <StyledImg src={props.image} alt="" />
           <IconsContainer>
             <ColumnContainer>
               <PlaceIcon src={placeicon} />
-              <p>Strasbourg</p>
+              <p>{props.region}</p>
             </ColumnContainer>
             <ColumnContainer>
               <PlaceIcon src={adressicon} />
-              <p>10 patchigue street</p>
+              <p>{props.ville}</p>
             </ColumnContainer>
           </IconsContainer>
         </BoxFaePicFlex>
       </Container>
       <ButtonContainer>
-        <StyledButton>Contact the event owner</StyledButton>
+        <Link to={`/showprofile/${props.author_id}`}><StyledButton>Contact the event owner</StyledButton></Link>
         <SpaceWhite />
         <StyledButton>Her/His Events</StyledButton>
       </ButtonContainer>
